@@ -1,0 +1,154 @@
+[
+  {"type":"light",
+   "show":true,
+   "device":
+          [
+          {
+            "deviceId": "586f570e3600e35b330a2da5",
+            "deviceType": "relay",
+            "filter_name": "light",
+            "name": "R1",
+            "data": true
+          },{
+            "deviceId": "586f570e5600e35b330a2da5",
+            "deviceType": "relay",
+            "filter_name": "light",
+            "name": "R2",
+            "data": true
+          },{
+            "deviceId": "586f570e4600e35b330a2da5",
+            "deviceType": "relay",
+            "filter_name": "light",
+            "name": "R3",
+            "data": true
+          },{
+            "deviceId": "586f570e3600e35b330a2da5",
+            "deviceType": "relay",
+            "filter_name": "light",
+            "name": "R4",
+            "data": true
+          },{
+            "deviceId": "586f570e2600e35b330a2da5",
+            "deviceType": "relay",
+            "filter_name": "light",
+            "name": "R5",
+            "data": true
+          }
+          ]
+  },{"type":"socket",
+     "show":true,
+     "device":
+          [
+          {
+            "deviceId": "586f570e3600e35b350a2da6",
+            "deviceType": "relay",
+            "filter_name": "socket",
+            "name": "S1",
+            "data": true
+          },{
+            "deviceId": "586f570e3600e35b430a2da6",
+            "deviceType": "relay",
+            "filter_name": "socket",
+            "name": "S2",
+            "data": true
+          },{
+            "deviceId": "586f570e3600e35b830a2da6",
+            "deviceType": "relay",
+            "filter_name": "socket",
+            "name": "S3",
+            "data": true
+          },{
+            "deviceId": "596f570e3600e35b330a2da6",
+            "deviceType": "relay",
+            "filter_name": "socket",
+            "name": "S4",
+            "data": true
+          }
+          ]
+
+  },{"type":"climate",
+     "show":true,
+     "device":
+          [
+          {
+            "deviceId": "506f570e3600e35b330a2da6",
+            "deviceType": "relay",
+            "filter_name": "climate",
+            "name": "Climate control",
+            "data": true
+          }
+          ]
+  },{"type":"cameras",
+          "show":true,
+          "device":
+          [
+            {
+              "deviceId": "856f570e3620e35b330a2da6",
+              "deviceType": "relay",
+              "filter_name": "security",
+              "name": "Security System",
+              "data": true
+            }
+          ]
+  },{"type":"doors",
+          "show":true,
+          "device":
+          [
+            {
+              "deviceId": "856f57597430e35ri60a2da6",
+              "deviceType": "relay",
+              "filter_name": "doors",
+              "name": "Door",
+              "data": true
+            }
+          ]
+  },{"type":"windows",
+          "show":true,
+          "device":
+          [
+            {
+              "deviceId": "856f564k3620ghe6pla2da6",
+              "deviceType": "relay",
+              "filter_name": "window",
+              "name": "Window",
+              "data": true
+            }
+          ]
+  },{"type":"multimedia",
+    "show":true,
+    "device":
+          [
+            {
+              "deviceId": "8564444l3620e35ri66ft2a6",
+              "deviceType": "relay",
+              "filter_name": "multimedia",
+              "name": "TV",
+              "data": true
+            }
+          ]
+  },{"type":"appliances",
+          "show":true,
+          "device":
+          [
+            {
+              "deviceId": "856f569587ftj35ryw6ft2a6",
+              "deviceType": "relay",
+              "filter_name": "appliance",
+              "name": "Coffee machine",
+              "data": true
+            }
+          ]
+  },{"type":"security",
+          "show":true,
+          "device":
+          [
+            {
+              "deviceId": "856f564k3620e35ri66f5999",
+              "deviceType": "relay",
+              "filter_name": "security",
+              "name": "Security alarm",
+              "data": true
+            }
+          ]
+  }
+]

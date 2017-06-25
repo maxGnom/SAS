@@ -1,0 +1,21 @@
+<section class="filter-devices-group-container">
+    <ul class="filter-devices-group">
+        <li ng-repeat="device in $storageDevices.datas" ng-class="'btn-switch-'+device.show" class="filter-btn-container">
+            <button ng-click="device.show = !device.show" class="filter-btn" type="button">
+                <img class="filter-btn-img" ng-src="{{'assets/img/'+device.type+'.jpg'}}" alt="filter btn img" />
+            </button>
+        </li>
+        <li class="filter-btn-container">
+            <a ui-sref="expert-mode"
+               id="change-link-btn1"
+               class="filter-btn filter-btn-change-page-link">
+               <img class="filter-btn-img" ng-src="assets/img/toggle-modes-img.jpg" alt="change page link img" />
+            </a>
+            <a ui-sref="device-mode"
+               id="change-link-btn2"
+               class="filter-btn filter-btn-change-page-link">
+                <img class="filter-btn-img" ng-src="assets/img/toggle-modes-img.jpg" alt="change page link img" />
+            </a>
+        </li>
+    </ul>
+</section>

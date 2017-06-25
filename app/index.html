@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="sasApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="sasApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="sasApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="sasApp" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Sas</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body ng-controller="rootController">
+<div class="page-wrapper">
+  <header class="page-header">
+    <div class="page-header-wrapper">
+      <div class="logotype-container">
+        <a class="logotype-link" ui-sref="device-mode">
+          <img class="logotype-img" src="assets/img/logotype.png" alt="logotype" />
+        </a>
+      </div>
+    </div>
+  </header>
+  <div class="main-content-wrapper">
+    <filter-devices class="filters"></filter-devices>
+    <div class="main-view" ui-view></div>
+  </div>
+  <scenarios-field class="scenarios"></scenarios-field>
+  <status-field class="status"></status-field>
+</div>
+  <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+  <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+  <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+  <script src="bower_components/ngstorage/ngStorage.min.js"></script>
+  <script src="app.js"></script>
+  <script src="services/get-datas.service.js"></script>
+  <script src="directives/filter-devices.directive.js"></script>
+  <script src="directives/scenarios-field.directive.js"></script>
+  <script src="directives/status-field.directive.js"></script>
+
+  <script src="app.config.js"></script>
+  <script src="expert-mode/expert-mode.module.js"></script>
+  <script src="devices-mode/devices-mode.module.js"></script>
+</body>
+</html>

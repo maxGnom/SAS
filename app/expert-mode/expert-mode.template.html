@@ -1,0 +1,23 @@
+<section class="manage-container-wrapper">
+    <div ng-if="deviceGroup.show == (deviceGroup.length > 0)"
+         ng-repeat="deviceGroup in $storageDevices.datas"
+         class="manage-container">
+        <h2 class="device-group-title" ng-bind="deviceGroup.type"></h2>
+        <div class="devices-present-container">
+            <div class="device"
+                 ng-repeat="eachDevice in deviceGroup.device">
+                <img ng-class="'device-icon-'+eachDevice.data" class="device-icon" ng-src="{{'assets/img/'+deviceGroup.type+'-icon.jpg'}}" alt="device logo" />
+                <span class="device-name">{{eachDevice.name}}</span>
+                <div ng-class="'container-btn-switch-info-'+eachDevice.data" class="device-status-btn-container">
+                    <span class="switch-info"
+                          ng-class="'switch-info-'+eachDevice.data"
+                          ng-bind="eachDevice.data?'on':'off'"></span>
+                    <button class="btn-device-status"
+                          ng-class="'switch-'+eachDevice.data"
+                          ng-click="changeData(eachDevice)"></button>
+                </div>
+                <span class="status-info-block">Все хорошо</span>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,37 @@
+<section class="scenarios-container">
+    <span class="scenarios-field-title">
+        Mode
+    </span>
+    <div class="menu-block">
+        <a ui-sref-active="active-link" class="device-mode-link menu-link" ui-sref="device-mode">
+        </a>
+        <a ui-sref-active="active-link" class="expert-mode-link menu-link" ui-sref="expert-mode">
+        </a>
+    </div>
+    <div class="menu-scenarios-manage-block">
+        <button id="scenarios-btn" class="tab-btn">
+        </button>
+        <button id="info-btn" class="tab-btn">
+        </button>
+        <div class="tabs-content-container">
+            <div id="tab-scenarios" class="tab-content">
+                <button class="off-all-devices-btn" ng-click="offAllDevices()">OFF all</button>
+                <div class="tab-scenarios-content">
+                    <div class="tab-scenarios-content-first-block">
+                    </div>
+                    <div class="tab-scenarios-content-second-block">
+                        <div class="devices-group-manage-container" ng-repeat="deviceGroups in $storageDevices.datas">
+                            <div ng-click="changeStatusDeviceGroup(deviceGroups.type)"
+                                 title="{{deviceGroups.type}}" class="devices-group-manage">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="tab-info" class="tab-content">
+                <p class="tab-info-title">info</p>
+                <span class="tab-info-text" ng-bind="$storageStatus.msg"></span>
+            </div>
+        </div>
+    </div>
+</section>
