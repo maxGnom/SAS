@@ -11,16 +11,16 @@ angular.module('sasApp', [
       $scope.$storageI.i++;
       $.each($scope.$storageDevices.datas, function(){
         if (this.type === type) {
+          var self = this;
           $.each(this.device, function(){
             if($scope.$storageI.i%2 > 0){
               this.data = false;
-              $scope.switchThis = false;
+              $scope.$storageStatus.msg = 'Status: ' + self.type + ' group has been switched off';
             }
             else {
               this.data = true;
-              $scope.switchThis = true;
+              $scope.$storageStatus.msg = 'Status: ' + self.type + ' group has been switched on';
             }
-            console.log($scope.$storageI.i);
           })
         }
       })
